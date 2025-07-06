@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-07-06 Sun 10:37 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Bhaven N. Sampat</title>
+<meta name="author" content="bhaven sampat" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<link rel="stylesheet" href="minimal-style.css"/>
+<meta name="description" content="Bhaven N. Sampat is an economist at Johns Hopkins University. Research on innovation, science policy, health, and public funding of science.">
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Bhaven N. Sampat</h1>
+
+
+
+<div id="outline-container-orgcd96bf0" class="outline-2">
+<h2 id="orgcd96bf0">About Me</h2>
+<div class="outline-text-2" id="text-orgcd96bf0">
+<p>
+I am an economist by training, studying science, technology, and public policy. My current work focuses on three areas: the economics and political economy of the NIH; pharmaceutical patent policy; and the uses of academic research by firms and policymakers. Across these areas, I’m interested in how the history of science and technology policy shapes and informs current policy debates.
+</p>
+
+<p>
+I recently joined Johns Hopkins University, with appointments at the <a href="https://president.jhu.edu/messages/2023/10/06/announcing-new-school-of-government-and-policy/">new School of Government and Policy</a> and the <a href="https://carey.jhu.edu/">Carey School of Business</a>. I am also a Research Associate in the Productivity, Innovation, and Entrepreneurship Program at <a href="https://www.nber.org/people/bhaven_sampat?page=1&amp;perPage=50">National Bureau of Economic Research (NBER)</a>. Below you’ll find my CV, a longer bio, links to recent papers, and contact information.
+</p>
+
+<p>
+<a href="./Sampat_Bhaven_CV_Current.pdf">Download my CV (PDF)</a> | <a href="./sampat-bio.html">Read a longer bio</a>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgdfd35e3" class="outline-2">
+<h2 id="orgdfd35e3">Recent Papers</h2>
+<div class="outline-text-2" id="text-orgdfd35e3">
+</div>
+<div id="outline-container-org7790045" class="outline-3">
+<h3 id="org7790045">Indirect Cost Recovery in U.S. Innovation Policy: History, Evidence, and Avenues for Reform</h3>
+<div class="outline-text-3" id="text-org7790045">
+<p>
+(with Pierre Azoulay and Daniel P. Gross) <br />
+<i>NBER Entrepreneurship and Innovation Policy and the Economy</i> (forthcoming) <br />
+</p>
+<ul class="org-ul">
+<li><a href="https://www.nber.org/papers/w33627">Paper</a></li>
+</ul>
+
+
+
+
+<p>
+The U.S. government has funded university research for nearly 80 years, with a significant share of this funding supporting the fixed costs of science through indirect cost recovery (ICR). We explain the history, objectives, and mechanics of ICR policy and review key controversies. We also provide new empirical evidence on indirect costs at the NIH, a major target of past and present ICR reform. Using data from over 350 institutions, we find that while negotiated ICR rates average 58%, effective rates—what NIH actually pays—average 42%, with relatively little variation across institutions or over time. Our analyses also suggest that a proposed 15% at rate would significantly cut NIH funding for many grantees, disproportionately affecting institutions most linked to commercial patenting and drug development. We conclude by assessing the current system, and major reform proposals, across several ICR policy objectives: support for research and infrastructure, cost-efficiency incentives, implementation costs, and transparency. No single approach dominates on all dimensions.
+</p>
+
+<hr />
+</div>
+</div>
+
+<div id="outline-container-org2719964" class="outline-3">
+<h3 id="org2719964">The Therapeutic Consequences of the War: World War II and the 20th-Century Expansion of Biomedicine</h3>
+<div class="outline-text-3" id="text-org2719964">
+<p>
+(with Daniel P. Gross) <br />
+<i>NBER Working Paper w33457</i> <br />
+</p>
+<ul class="org-ul">
+<li><a href="https://www.nber.org/papers/w33457">Paper</a></li>
+</ul>
+
+
+
+<p>
+During World War II, the U.S. Committee on Medical Research (CMR) undertook an integrated, cross-sectoral effort to develop medical science and technology for war, representing the U.S. government's first substantial investment in medical research. Using data on all CMR research contracts, we show that although it had mixed results during the war, it laid a foundation for the postwar takeoff of the U.S. biomedical innovation system. New and emerging research areas it supported experienced rapid growth in postwar science. It also fueled new postwar drug development, influenced medical practice, and shaped extramural research funding at the National Institutes of Health.
+</p>
+
+<hr />
+</div>
+</div>
+
+<div id="outline-container-org2f01faf" class="outline-3">
+<h3 id="org2f01faf">Patents, Innovation, and Competition in Pharmaceuticals: The Hatch-Waxman Act after 40 Years</h3>
+<div class="outline-text-3" id="text-org2f01faf">
+<p>
+(with C. Scott Hemphill) <br />
+<i>Journal of Economic Perspectives</i> Spring 2025  <br />
+</p>
+<ul class="org-ul">
+<li><a href="https://www.aeaweb.org/articles?id=10.1257/jep.20241423">Paper</a></li>
+<li><a href="https://www.aeaweb.org/articles/materials/22976">Supplemental Appendix</a></li>
+<li><a href="https://www.openicpsr.org/openicpsr/project/218443/version/V1/view">Replication Package</a></li>
+</ul>
+
+
+<p>
+A central policy issue in pharmaceuticals is how to balance the dynamic benefits of new drugs against the static benefits of low prices for existing drugs. In the United States, that balance is set by the Hatch-Waxman Act. We review the Act's origins and key features, then present evidence on its effects on competition and innovation. On the competition side, we show how the Act creates incentives for brands to accumulate patents and generics to challenge them, with the result being a rough stalemate. We also discuss strategies deployed by brands to delay generic entry. On the innovation side, we show that the Act's patent extension provisions—which aim to allow branded firms to make up for time lost during clinical trials and regulatory review—are incomplete, resulting in potential distortions. The net result is a convoluted and expensive approach to balancing innovation and competition.
+</p>
+
+<hr />
+</div>
+</div>
+
+<div id="outline-container-orge83883a" class="outline-3">
+<h3 id="orge83883a">Using Bayh-Dole Act March-In Rights to Lower US Drug Prices</h3>
+<div class="outline-text-3" id="text-orge83883a">
+<p>
+(with Lisa Larrimore Ouellette) <br />
+<i>JAMA Health Forum</i>, November 2024 <br />
+</p>
+<ul class="org-ul">
+<li><a href="https://jamanetwork.com/journals/jama-health-forum/fullarticle/2825385">Paper</a></li>
+<li><a href="https://doi.org/10.7910/DVN/VI93T9">Dataset: Orange Book Patent Data, Including Public-Sector Patent Information, 1985-2023</a></li>
+</ul>
+
+
+
+<p>
+In December 2023, the Biden-Harris Administration released a proposed framework for exercising government march-in rights (effectively granting compulsory licenses for those patents to generic drug makers) under the Bayh-Dole Act on patents on taxpayer-funded drugs, which has renewed questions about whether march-in rights could promote cost savings through generic competition or harm pharmaceutical innovation. While both proponents and critics of the new rules view them as having broad scope, march-in rights can be exercised only on patents that result from federally funded research, and they can enable generic entry only if all patents on a drug were public-sector patents. In this paper, we examine the feasibility of using march-in rights to lower pharmaceutical prices by examining patents on drugs approved by the U.S. Food and Drug Administration (FDA) from 1985 to 2022. Of 883 new molecular entities approved from 1985 to 2022, 68 (8%) had a Bayh-Dole patent, but only 18 (2%) had solely Bayh-Dole patents. Although Bayh-Dole march-in rights could remove patent barriers to generic entry for a few drugs, their overall effect would be limited.
+</p>
+
+<hr />
+</div>
+</div>
+
+<div id="outline-container-org881510e" class="outline-3">
+<h3 id="org881510e">The History and Political Economy of NIH Peer Review</h3>
+<div class="outline-text-3" id="text-org881510e">
+<p>
+Brookings, IFP, Good Science Project /<a href="https://www.brookings.edu/collection/building-a-better-nih/">Building a Better NIH/</a> Series
+</p>
+<ul class="org-ul">
+<li><a href="https://www.brookings.edu/wp-content/uploads/2023/05/SampatFinal-3.pdf">Paper</a></li>
+</ul>
+
+
+<p>
+A major focus of recent NIH reform efforts has been on the agency’s peer review system, the machinery it uses to allocate the bulk of its funding. This paper provides historical context for these reform efforts by chronicling the origins, and evolution, and political economy of the NIH peer review process, and the complexities of NIH reform.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org82a4c60" class="outline-2">
+<h2 id="org82a4c60">Contact</h2>
+<div class="outline-text-2" id="text-org82a4c60">
+<p>
+Email: <a href="mailto:sampat@jhu.edu">sampat@jhu.edu</a> <br />
+Bluesky: <a href="https://bsky.app/profile/sampat.bsky.social">@sampat.bsky.social</a>
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>
